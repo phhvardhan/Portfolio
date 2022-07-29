@@ -698,15 +698,15 @@ section {
   position: relative;
   background-color: var(--color-grey-5);
   border-radius: 5px;
-  -webkit-box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.1);
-          box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: 1px 1px 20px var(--color-grey-4);
+          box-shadow: 1px 1px 20px var(--color-grey-4);
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
 
 .blogs .blog:hover {
-  -webkit-box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.3);
-          box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: 1px 1px 20px #aa8128;
+          box-shadow: 1px 1px 20px #aa8128;
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
   -webkit-transition: all .4s ease-in-out;
@@ -718,8 +718,8 @@ section {
           filter: grayscale(0);
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  -webkit-box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.8);
-          box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: 0px 4px 15px #aa8128;
+          box-shadow: 0px 4px 15px #aa8128;
 }
 
 .blogs .blog img {
