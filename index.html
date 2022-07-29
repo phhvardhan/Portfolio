@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body class="main-content">
-    <header class="section sec1 header active" id="home">
+        <header class="section sec1 header active" id="home">
         <div class="header-content">
             <div class="left-header">
                 <div class="h-shape"></div>
@@ -40,7 +40,7 @@
                 </div>
             </div>
         </div>
-    </header>
+        </header>
     <main>
         <section class="section sec2 about" id="about">
             <div class="main-title">
@@ -273,7 +273,7 @@
                 </div>
                 <div class="portfolio-item">
                     <div class="image">
-                        <img src="img/port2.jpg" alt="">
+                        <img src="img/Port2.jpg" alt="">
                     </div>
                     <div class="hover-items">
                         <h3>Project Source</h3>
@@ -310,7 +310,6 @@
                 </div>
         </div>
         </section>
-        <p>%n</p>
         <section class="section sec4 " id="blogs">
             <div class="blogs-content">
                 <div class="main-title">
@@ -479,8 +478,8 @@
                     <div class="right-contact">
                         <form action="" class="contact-form">
                             <div class="input-control i-c-2">
-                                <input type="text" required placeholder="YOUR NAME">
-                                <input type="email" required placeholder="YOUR EMAIL">
+                                <input type="text" placeholder="YOUR NAME" required >
+                                <input type="email"  placeholder="YOUR EMAIL" required>
                             </div>
                             <div class="input-control">
                                 <input type="text" required placeholder="ENTER SUBJECT">
@@ -488,8 +487,10 @@
                             <div class="input-control">
                                 <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
                             </div>
+                            <!-- <button type="submit">Submit</button> -->
                             <div class="submit-btn">
-                                <a  href="mailto: phhvardhan@gmail.com? Subject= Feedback/ Suggestion" enctype="multipart/form-data" class="main-btn">
+                                <form action="https://formsubmit.co/phhvardhan@gmail.com"method="POST">
+                                <a class="main-btn">
                                     <span class="btn-text">Submit</span>
                                 </a>
                             </div>
