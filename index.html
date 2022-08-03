@@ -480,26 +480,45 @@
                         </div>
                     </div>
                     <div class="right-contact">
-                        <form action="" class="contact-form">
+                        <form onsubmit="sendEmail(); reset(); return false;">
+                            
                             <div class="input-control i-c-2">
-                                <input type="text" placeholder="YOUR NAME" required >
-                                <input type="email"  placeholder="YOUR EMAIL" required>
+
+                                <input type="name" placeholder="Name" required >
+                                <input type="email"  placeholder="Email" required>
+
                             </div>
                             <div class="input-control">
-                                <input type="text" required placeholder="ENTER SUBJECT">
+                                <input type="text" required placeholder="Enter The Subject">
+                                <!-- <input type="text" required placeholder="ENTER SUBJECT"> -->
+
                             </div>
                             <div class="input-control">
-                                <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
+
+                                <textarea id="message" rows="8" placeholder="Message Here..."></textarea>
+                                
                             </div>
-                            <!-- <button type="submit">Submit</button> -->
-                            <div class="submit-btn">
-                                <form action="https://formsubmit.co/phhvardhan@gmail.com"method="POST">
-                                <a class="main-btn">
-                                    <span class="btn-text">Submit</span>
-                                </a>
-                            </div>
+                            <button type="submit">Submit</button>
                         </form>
                     </div>
+                    <script src="https://smtpjs.com/v3/smtp.js"></script>
+                    <script>
+                    function sendEmail()
+                    {
+                        Email.send({
+                                    SecureToken:"7cfcaec6-59df-4087-bb48-9d3a2b32311b",
+                                    To : 'harshavardhanpeela055@gmail.com',
+                                    From : Document.getElementById("email").value,
+                                    Subject : "This is the subject",
+                                    Body:"Name:"+document.getElementById("name").value
+                                            +"<br> Email:"+document.getElementById("email").value
+                                            +"<br> Subject:"+document.getElementById("text").value
+                                            +"<br> Message:"+document.getElementById("message").value
+                                }).then(
+                                message => alert("SENT SUCCESFULLY")
+                                );
+                    }
+                    </script>
                 </div>
             </div>
         </section>
